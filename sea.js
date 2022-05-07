@@ -1,4 +1,7 @@
 const encoder = require('@jacobcoro/gun-text-encoding')
+const BufferImport = require('buffer')
+if(window) window.Buffer = BufferImport;
+else global.window.Buffer = BufferImport;
 const peculiarWebCrypto = require('@peculiar/webcrypto')
 ;(function(){
 

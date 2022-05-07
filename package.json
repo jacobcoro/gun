@@ -59,9 +59,10 @@
   },
   "dependencies": {
     "@jacobcoro/gun-text-encoding": "^0.7.0",
-    "ws": "^7.2.1",
     "@peculiar/webcrypto": "^1.1.1",
-    "emailjs": "^2.2.0"
+    "buffer": "^6.0.3",
+    "emailjs": "^2.2.0",
+    "ws": "^7.2.1"
   },
   "devDependencies": {
     "aws-sdk": "^2.528.0",

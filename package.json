@@ -1,6 +1,6 @@
 {
   "name": "@jacobcoro/gun",
-  "version": "0.2020.12371",
+  "version": "0.2020.12374",
   "description": "A realtime, decentralized, offline-first, graph data synchronization engine.",
   "types": "index.d.ts",
   "main": "index.js",
@@ -58,9 +58,10 @@
     "directory": "types"
   },
   "dependencies": {
-    "ws": "^7.2.1",
+    "@jacobcoro/gun-text-encoding": "^0.7.0",
     "@peculiar/webcrypto": "^1.1.1",
-    "emailjs": "^2.2.0"
+    "emailjs": "^2.2.0",
+    "ws": "^7.2.1"
   },
   "devDependencies": {
     "aws-sdk": "^2.528.0",

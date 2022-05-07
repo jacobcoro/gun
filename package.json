@@ -1,6 +1,6 @@
 {
-  "name": "gun",
-  "version": "0.2020.1237",
+  "name": "@jacobcoro/gun",
+  "version": "0.2020.12371",
   "description": "A realtime, decentralized, offline-first, graph data synchronization engine.",
   "types": "index.d.ts",
   "main": "index.js",
@@ -58,9 +58,7 @@
     "directory": "types"
   },
   "dependencies": {
-    "ws": "^7.2.1"
-  },
-  "optionalDependencies": {
+    "ws": "^7.2.1",
     "@peculiar/webcrypto": "^1.1.1",
     "emailjs": "^2.2.0"
   },
@@ -69,5 +67,9 @@
     "ip": "^1.1.5",
     "mocha": "^6.2.0",
     "uglify-js": "^3.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

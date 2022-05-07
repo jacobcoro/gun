@@ -1,3 +1,5 @@
+const encoder = require('@jacobcoro/gun-text-encoding')
+
 ;(function(){
 
   /* UNBUILD */
@@ -185,7 +187,7 @@
     }
     if(!api.TextDecoder)
     {
-      const { TextEncoder, TextDecoder } = USE((u+'' == typeof MODULE?'.':'')+'./lib/text-encoding', 1);
+      const { TextEncoder, TextDecoder } = encoder;
       api.TextDecoder = TextDecoder;
       api.TextEncoder = TextEncoder;
     }

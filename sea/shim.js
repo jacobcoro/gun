@@ -1,5 +1,6 @@
 
     const SEA = require('./root')
+    const encoder = require('@jacobcoro/gun-text-encoding');
     const api = {Buffer: require('./buffer')}
     var o = {}, u;
 
@@ -23,7 +24,7 @@
     }
     if(!api.TextDecoder)
     {
-      const { TextEncoder, TextDecoder } = require((u+'' == typeof MODULE?'.':'')+'./lib/text-encoding', 1);
+      const { TextEncoder, TextDecoder } = encoder;
       api.TextDecoder = TextDecoder;
       api.TextEncoder = TextEncoder;
     }

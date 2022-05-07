@@ -1,5 +1,5 @@
 const encoder = require('@jacobcoro/gun-text-encoding')
-
+const peculiarWebCrypto = require('@peculiar/webcrypto')
 ;(function(){
 
   /* UNBUILD */
@@ -200,7 +200,7 @@ const encoder = require('@jacobcoro/gun-text-encoding')
         crypto,
         random: (len) => api.Buffer.from(crypto.randomBytes(len))
       });      
-      const { Crypto: WebCrypto } = USE('@peculiar/webcrypto', 1);
+      const { Crypto: WebCrypto } = peculiarWebCrypto;
       api.ossl = api.subtle = new WebCrypto({directory: 'ossl'}).subtle // ECDH
     }
     catch(e){
